@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" value="notranslate">
+
+  <title>Tic Tac Toe </title>
+
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./index.css" />
+
+  <body>
+
+
+    <div class="text-center">
+      <h1 class="hidden-xs">Tic-tac-toe</h1>
+    </div>
+    <div id="board">
+      <div id="row_0" class="boardRow text-center">
+        <div id="col_0_0" class="boardCol col-xs-4 col-md-4"></div>
+        <div id="col_0_1" class="boardCol col-xs-4 col-md-4"></div>
+        <div id="col_0_2" class="boardCol col-xs-4 col-md-4"></div>
+      </div>
+      <div id="row_1" class="boardRow text-center">
+        <div id="col_1_0" class="boardCol col-xs-4 col-md-4"></div>
+        <div id="col_1_1" class="boardCol col-xs-4 col-md-4"></div>
+        <div id="col_1_2" class="boardCol col-xs-4 col-md-4"></div>
+      </div>
+      <div id="row_2" class="boardRow text-center">
+        <div id="col_2_0" class="boardCol col-xs-4 col-md-4"></div>
+        <div id="col_2_1" class="boardCol col-xs-4 col-md-4"></div>
+        <div id="col_2_2" class="boardCol col-xs-4 col-md-4"></div>
+      </div>
+    </div>
+    <div class="navbar-fixed-bottom">
+      <div id="status" class="alert container text-center"></div>
+      <button id="retry" class="btn btn-default btn-lg pull-right">
+        <span class="glyphicon glyphicon-refresh"></span></button>
+    </div>
+    <div id="setupModal" tabindex="-1" role="dialog" class="modal fade">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header text-center lead">Which side would you like? </div>
+          <div class="modal-body">
+            <button id="choiceX" class="btn btn-default btn-block">X</button>
+            <button id="choiceO" class="btn btn-primary btn-block">O</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/bootstrap.native/0.9.6/bootstrap-native.min.js"></script>
+    <script src="./client.min.js"></script>
+  </body>
+
+</html>

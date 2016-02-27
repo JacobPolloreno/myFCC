@@ -1,0 +1,22 @@
+#board {
+  background-color: #338BC7;
+  position: relative;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+#board > div > .col-xs-4, #board > div > .col-md-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#retry {
+  margin-right: 15px;
+  margin-bottom: 15px
+}
+#row_0, #row_1 {
+  border-bottom: 2px solid black;
+}
+#col_0_1, #col_0_2, #col_1_1, #col_1_2, #col_2_1, #col_2_2 {
+  border-left: 2px solid black;
+}
