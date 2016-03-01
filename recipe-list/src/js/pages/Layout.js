@@ -1,12 +1,20 @@
 import React from 'react';
 
+import Header from '../components/Header';
+import Main from '../components/Main';
+import Footer from '../components/Footer';
+
 export default class Layout extends React.Component {
 
   render() {
 
     return (
-        <div class="container">
-          <h1 class="text-center">Webpack React Starter</h1>
+        <div>
+          <section class="recipes">
+            <Header />
+            <Main />
+            <Footer />
+          </section>
         </div>
 
     );
