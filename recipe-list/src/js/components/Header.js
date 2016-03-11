@@ -1,18 +1,18 @@
 import React from 'react';
 
-// import Recipes from '../components/Recipes';
+import RecipeAddForm from './Header/RecipeAddForm';
 
 export default class Header extends React.Component {
 
   render() {
+    const { location } = this.props;
+    const headerComponent = location.pathname === '/' ? <RecipeAddForm /> : null;
 
     return (
-    <header>
-      <h1>My Recipes</h1>
-      <form>
-        <input class="new-recipe" placeholder="Add a new recipe"/>
-      </form>
-    </header>
+      <header>
+        <h1>My Recipes</h1>
+        { headerComponent }
+      </header>
 
     );
   }

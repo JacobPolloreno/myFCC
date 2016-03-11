@@ -62,13 +62,14 @@ input[type="checkbox"] {
 
   h1 {
     position: absolute;
-    top: -155px;
+    top: -165px;
     width: 100%;
     font-size: 100px;
     font-weight: 100;
     text-align: center;
     color: rgba(175, 47, 47, 0.15);
     text-rendering: optimizeLegibility;
+    font-family: 'Roboto Slab', serif;
   }
 }
 
@@ -98,10 +99,61 @@ input[type="checkbox"] {
   box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
 }
 
+.back-btn {
+  padding: 16px 16px 16px 15px;
+  border: none;
+  background: rgba(0, 0, 0, 0.003);
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+  text-decoration: none;
+  color:inherit;
+}
+
 .main {
   position: relative;
   z-index: 2;
   border-top: 1px solid #e6e6e6;
+}
+
+
+.recipe-details {
+  h2 {
+    padding-top: 20px;
+    text-align: center;
+  }
+  h4 {
+    padding: 15px;
+  }
+  li {
+    position: relative;
+    font-size: 14px;
+    .destroy {
+      cursor: pointer;
+      display: none;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      margin: auto 0;
+      font-size: 18px;
+      color: #cc9a9a;
+      transition: color 0.2s ease-out;
+      &:hover {
+        color: #af5b5e;
+      }
+      &:after {
+        content: '×';
+      }
+    }
+    &:hover .destroy {
+      display: inline-block;
+    }
+    .new-input {
+      border: none;
+      background: rgba(0, 0, 0, 0.003);
+      color: inherit;
+      border: 0;
+      outline: none;
+    }
+  }
 }
 
 .recipe-list {
@@ -129,14 +181,22 @@ input[type="checkbox"] {
         display: none;
       }
     }
+    a {
+      text-decoration: none;
+      color:inherit;
+    }
     label {
       white-space: pre;
       word-break: break-word;
       padding: 15px 60px 15px 15px;
-      margin-left: 45px;
+      margin-left: 15px;
       display: block;
       line-height: 1.2;
       transition: color 0.4s;
+      cursor:pointer;
+      &:hover {
+        color: #af5b5e;
+      }
     }
     &.completed label {
       color: #d9d9d9;
@@ -189,5 +249,22 @@ input[type="checkbox"] {
     height: 50px;
     overflow: hidden;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0, 0, 0, 0.2);
+  }
+  a, button {
+    position: relative;
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    color: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .save {
+    float:right;
+  }
+  .cancel {
+    float:left;
   }
 }
