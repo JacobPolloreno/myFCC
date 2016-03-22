@@ -60,9 +60,9 @@ function requestRecipe(title) {
 }
 
 function requestRecipes() {
-  dispatcher.dispatch({
-    type: 'FETCH_RECIPES',
-  });
+  // dispatcher.dispatch({
+  //   type: 'FETCH_RECIPES',
+  // });
 
   const recipes = [];
 

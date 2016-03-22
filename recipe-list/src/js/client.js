@@ -6,6 +6,10 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import Layout from './pages/Layout';
 import List from './pages/List';
 import Details from './pages/Details';
+import RecipeData from './RecipeData';
+
+// Load mock data into local storage
+RecipeData.init();
 
 const app = document.getElementById('app');
 
