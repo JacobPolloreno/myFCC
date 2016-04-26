@@ -17,7 +17,7 @@ ReactDOM.render(
   <Router history={history}>
     <Route path="/myFCC/recipes/" component={Layout}>
       <IndexRoute component={List}></IndexRoute>
-      <Route path="recipe/:title" component={Details}></Route>
+      <Route path="/myFCC/recipes/:title" component={Details}></Route>
     </Route>
   </Router>,
 app);
