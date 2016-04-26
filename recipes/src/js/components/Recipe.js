@@ -18,7 +18,7 @@ export default class Recipe extends React.Component {
 
     return (
       <div>
-        <Link to={'recipe/' + urlTitle}><label>{ title }</label></Link>
+        <Link to={'details/' + urlTitle}><label>{ title }</label></Link>
         <button class="destroy" onClick={ this.onClick}></button>
       </div>
     );
