@@ -1,5 +1,5 @@
 {
-  "name": "recipe-list",
+  "name": "recipes",
   "version": "0.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -33,7 +33,7 @@
   "scripts": {
     "watch:css": "node-sass --watch src/stylesheets/main.scss src/styles.css",
     "build:css": "node-sass src/stylesheets/main.scss src/styles.css",
-    "dev": "webpack-dev-server --content-base src --progress --inline --colors --hot",
+    "dev": "webpack-dev-server --progress --inline --colors --hot",
     "build": "npm run build:css && NODE_ENV=production webpack -p --progress --colors --profile",
     "test": "jest"
   },
