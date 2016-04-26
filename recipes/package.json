@@ -31,8 +31,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "watch:css": "node-sass --watch src/stylesheets/main.scss src/styles.css",
-    "build:css": "node-sass src/stylesheets/main.scss src/styles.css",
+    "watch:css": "node-sass --watch src/stylesheets/main.scss build/styles.css",
+    "build:css": "node-sass src/stylesheets/main.scss build/styles.css",
     "dev": "webpack-dev-server --progress --inline --colors --hot",
     "build": "npm run build:css && NODE_ENV=production webpack -p --progress --colors --profile",
     "test": "jest"
